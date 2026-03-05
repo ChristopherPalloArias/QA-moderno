@@ -78,26 +78,26 @@ Las pruebas automatizadas de **UI**, **API** y **Unit Test** se encuentran en un
 
 | Detalle | Información |
 |---|---|
-| **Repositorio** | [Budget_Management_App](https://github.com/ChristopherPalloArias/Budget_Management_App.git) |
-| **Rama** | `📌 _pendiente de definir_` |
+| **Repositorio** | [Budget_Management_App](https://github.com/ChristopherPalloArias/Budget_Management_App/tree/feature/roi-automation-pyramid/qa-automation) |
+| **Rama** | `📌 feature/roi-automation-pyramid` |
 
 ### Tipos de Prueba
 
 | Tipo de Prueba | Herramientas / Framework | Descripción |
 |---|---|---|
-| **UI Tests** | Gradle + Serenity BDD | Pruebas de interfaz de usuario end-to-end que validan flujos completos desde la perspectiva del usuario. Serenity genera reportes detallados con capturas de pantalla paso a paso. |
-| **API Tests** | _Por definir_ | Pruebas que validan los endpoints del backend, verificando respuestas HTTP, códigos de estado, estructura de payloads y reglas de negocio a nivel de servicio. |
-| **Unit Tests** | _Por definir_ | Pruebas unitarias que validan la lógica de negocio de componentes individuales de forma aislada. |
+| **UI Tests** | Gradle + Serenity BDD + Screenplay | Pruebas de interfaz de usuario end-to-end que validan flujos completos desde la perspectiva del usuario. Serenity genera reportes detallados con capturas de pantalla paso a paso. |
+| **API Tests** | Gradle + Serenity REST | Pruebas que validan los endpoints del backend, verificando respuestas HTTP, códigos de estado, estructura de payloads y reglas de negocio a nivel de servicio. |
+| **Unit Tests** | Maven + JUnit 5 | Pruebas unitarias que validan la lógica de negocio y las fórmulas matemáticas de componentes individuales de forma aislada. |
 
 ### Métricas de Tiempo de Ejecución
 
-> ⏱️ _Sección pendiente de completar tras la ejecución de las pruebas._
+> ⏱️ _Métricas extraídas de la ejecución en entorno local, evidenciando empíricamente la Pirámide de Automatización y el impacto del ROI._
 
 | Tipo de Prueba | Cantidad de Tests | Tiempo de Ejecución | Observaciones |
 |---|---|---|---|
-| UI Tests | — | — | — |
-| API Tests | — | — | — |
-| Unit Tests | — | — | — |
+| UI Tests | 2 | 24 segundos | Validar un flujo contable (Happy Path) consume un tiempo elevado por la renderización visual del DOM. **Bajo ROI** para automatización masiva. |
+| API Tests | 15 | 5 segundos | Ejecución de flujos complejos (integración, base de datos, asíncronos) en una fracción del tiempo de la UI. **Alto ROI**. |
+| Unit Tests | 4 | ~79 milisegundos | Validación instantánea de lógica pura. Descubre errores estructurales en menos de una décima de segundo. **Altísimo ROI**. |
 
 ---
 
