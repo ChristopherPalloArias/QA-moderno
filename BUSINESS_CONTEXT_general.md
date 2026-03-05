@@ -1,22 +1,22 @@
 # Plantilla de Contexto de Negocio — General (Gema A + Gema B)
 
-> **Proposito:** Este documento es la plantilla de contexto de negocio completa y unificada que sirve como entrada para ambas Gemas: la Gema A (Diagnostico INVEST de Historias de Usuario) y la Gema B (Generacion de Casos de Prueba en Gherkin). Contiene tanto la informacion de negocio como las especificaciones tecnicas necesarias para testing.
+> **Propósito:** Este documento es la plantilla de contexto de negocio completa y unificada que sirve como entrada para ambas Gemas: la Gema A (Diagnóstico INVEST de Historias de Usuario) y la Gema B (Generación de Casos de Prueba en Gherkin). Contiene tanto la información de negocio como las especificaciones tecnicas necesarias para testing.
 
 ---
 
-## 1. Descripcion del Proyecto
+## 1. Descripción del Proyecto
 
 - **Nombre del Proyecto:** Budget Management App (Aplicacion de Gestion de Presupuestos)
-- **Objetivo del Proyecto:** Proporcionar a los usuarios una herramienta web para gestionar sus finanzas personales, permitiendo el registro, categorizacion y seguimiento de ingresos y gastos, con el fin de facilitar el control presupuestario y la toma de decisiones financieras informadas.
+- **Objetivo del Proyecto:** Proporcionar a los usuarios una herramienta web para gestionar sus finanzas personales, permitiendo el registro, categorización y seguimiento de ingresos y gastos, con el fin de facilitar el control presupuestario y la toma de decisiones financieras informadas.
 
-## 2. Flujos Criticos del Negocio
+## 2. Flujos Críticos del Negocio
 
 - **Principales Flujos de Trabajo:**
-  - Registro e inicio de sesion de usuarios mediante autenticacion JWT.
-  - Gestion de categorias personalizadas (CRUD) para clasificar transacciones financieras (ej: Alimentacion, Transporte, Salario, Freelance).
+  - Registro e inicio de sesión de usuarios mediante autenticación JWT.
+  - Gestión de categorías personalizadas (CRUD) para clasificar transacciones financieras (ej: Alimentación, Transporte, Salario, Freelance).
   - Registro de transacciones financieras (ingresos y gastos) indicando monto, descripcion, fecha, tipo (ingreso/gasto) y categoria asociada.
-  - Visualizacion de resumen financiero: balance general, total de ingresos, total de gastos y saldo disponible.
-  - Filtrado y busqueda de transacciones por fecha, categoria o tipo.
+  - Visualización de resumen financiero: balance general, total de ingresos, total de gastos y saldo disponible.
+  - Filtrado y búsqueda de transacciones por fecha, categoría o tipo.
 
 - **Modulos o Funcionalidades Criticas:**
   - Modulo de autenticacion y autorizacion (registro, login, JWT)
