@@ -1,6 +1,6 @@
 # QA Moderno — Budget Management App
 
-> **Proyecto:** Budget Management App (SofkianOS MVP)  
+> **Proyecto:** Budget Management App
 > **Propósito:** Repositorio de artefactos de QA generados y validados con asistencia de IA (Gemas de Gemini), cubriendo desde el refinamiento de historias de usuario hasta la generación de casos de prueba y la ejecución automatizada de tests.
 
 ---
